@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-them="light">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,58 +12,59 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- font awesome link -->
-
     <!-- style link -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="flex justify-between w-11/12 mx-auto  py-4 border-b border-b-gray-400 ">
+      <nav
+        class="flex justify-between w-11/12 mx-auto py-4 border-b border-b-gray-400"
+      >
         <!-- logo div -->
         <div class="logo">
           <img src="logo/Logo.png" alt="" />
         </div>
 
         <!-- search bar div -->
-        <div class="search">
-          <label class="input">
-            <svg
-              class="h-[1em] opacity-50"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+        <label class="input">
+          <svg
+            class="h-[1em] opacity-50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <g
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2.5"
+              fill="none"
+              stroke="currentColor"
             >
-              <g
-                stroke-linejoin="round"
-                stroke-linecap="round"
-                stroke-width="2.5"
-                fill="none"
-                stroke="currentColor"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </g>
-            </svg>
-            <input type="search" required placeholder="Search" />
-          </label>
-        </div>
-
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </g>
+          </svg>
+          <input type="search" required placeholder="Search" />
+        </label>
         <!-- short div -->
         <div class="short">
-            <button class="btn bg-red-500 text-white">SHORT</button>
+          <button class="btn bg-red-500 text-white">SHORT</button>
         </div>
       </nav>
       <!-- categories button -->
-       <nav id="categories-Container" class="flex gap-5 justify-center py-4"></nav>
+      <nav
+        id="categories-Container"
+        class="flex gap-5 justify-center py-4"
+      ></nav>
     </header>
     <main>
-        <section id="video-">
-
-        </section>
+      <section
+        id="video-container"
+        class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-4 lg: gird-cols-4 py-6 gap-5"
+      ></section>
     </main>
     <footer></footer>
 
     <!-- javascript scr link -->
-     <script src="scripts/index.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
